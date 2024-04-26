@@ -15,8 +15,8 @@ go get -u github.com/quanxiang-cloud/go-polysdk
 1. create a poly client from the config file
 ```Go
 	c, err := polysdk.NewPolyClient(&config.PolyConfig{
-		RemoteURL:   "https://apis.yunify.com/",
-		Key:         config.PolyKeyConfig{AccessKeyID: "cGrm_Tu31AGh4HzIcCtyUg", SecretKey: "6hmAMl-YmVQATjCO5KDrj6FYebL3TIw2qJe0rSo0_Sc"},
+		RemoteURL:   "http://api.example.com/",
+		Key:         config.PolyKeyConfig{AccessKeyID: "cxxx_xxxxxxxxxx", SecretKey: "xxxx-xxxxxxxxxc"},
 		CreateAt:    "2020-01-01",
 		Description: "test",
 	})
