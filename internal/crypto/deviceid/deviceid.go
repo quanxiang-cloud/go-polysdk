@@ -5,10 +5,11 @@ import (
 	"encoding/json"
 	"net"
 	"os"
-	"polysdk/consts"
-	"polysdk/internal/hash"
 	"sort"
 	"strings"
+
+	"github.com/quanxiang-cloud/go-polysdk/consts"
+	"github.com/quanxiang-cloud/go-polysdk/internal/hash"
 )
 
 // EnvPolyDeveceID id environment var of poly device id
@@ -47,7 +48,7 @@ func myDeviceID() []byte {
 	}
 
 	device := strings.Join(strList, ";")
-	//println(device)
+	// println(device)
 	hexID := hash.Default(nil, device)
 	return hexID
 }
@@ -66,7 +67,7 @@ func getMacAddrs() string {
 			macAddrs = append(macAddrs, mac)
 		}
 	}
-	sort.Strings(macAddrs) //mac addrs
+	sort.Strings(macAddrs) // mac addrs
 	debugShowStrings(macAddrs)
 	return strings.Join(macAddrs, ",")
 }

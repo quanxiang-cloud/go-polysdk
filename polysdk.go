@@ -5,8 +5,9 @@ import (
 	"net/http"
 	"time"
 
-	"polysdk/internal/config"
-	"polysdk/internal/signature"
+	"github.com/quanxiang-cloud/go-polysdk/internal/signature"
+
+	"github.com/quanxiang-cloud/go-polysdk/internal/config"
 )
 
 const (

@@ -3,10 +3,11 @@ package polysdk
 import (
 	"encoding/json"
 	"fmt"
-	"polysdk/internal/hash"
-	"polysdk/internal/polysign"
 	"sync/atomic"
 	"time"
+
+	"github.com/quanxiang-cloud/go-polysdk/internal/hash"
+	"github.com/quanxiang-cloud/go-polysdk/internal/polysign"
 )
 
 // Now return time that adjust with server.

@@ -4,9 +4,10 @@ import (
 	"testing"
 	"time"
 
-	"polysdk"
-	"polysdk/internal/config"
-	"polysdk/internal/polysign"
+	"github.com/quanxiang-cloud/go-polysdk"
+
+	"github.com/quanxiang-cloud/go-polysdk/internal/config"
+	"github.com/quanxiang-cloud/go-polysdk/internal/polysign"
 )
 
 var c *polysdk.PolyClient

@@ -1,7 +1,7 @@
 package polysdk
 
 import (
-	"polysdk/internal/polysign"
+	"github.com/quanxiang-cloud/go-polysdk/internal/polysign"
 )
 
 // polysign exports

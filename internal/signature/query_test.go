@@ -3,8 +3,8 @@ package signature
 import (
 	"encoding/json"
 	"fmt"
-	"polysdk/internal/config"
-	"polysdk/internal/polysign"
+	"github.com/quanxiang-cloud/go-polysdk/internal/config"
+	"github.com/quanxiang-cloud/go-polysdk/internal/polysign"
 	"testing"
 )
 

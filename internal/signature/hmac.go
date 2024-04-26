@@ -7,7 +7,7 @@ import (
 	"hash"
 	"strings"
 
-	"polysdk/internal/config"
+	"github.com/quanxiang-cloud/go-polysdk/internal/config"
 )
 
 const hashMethod = "sha256"

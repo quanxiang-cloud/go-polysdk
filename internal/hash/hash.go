@@ -5,7 +5,7 @@ import (
 	"encoding/binary"
 	"encoding/hex"
 	"fmt"
-	"polysdk/consts"
+	"github.com/quanxiang-cloud/go-polysdk/consts"
 	"time"
 )
 

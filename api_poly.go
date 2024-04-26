@@ -1,7 +1,7 @@
 package polysdk
 
 import (
-	"polysdk/internal/apipath"
+	"github.com/quanxiang-cloud/go-polysdk/internal/apipath"
 )
 
 // PolyAPIRequest request poly api from polyapi

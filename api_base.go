@@ -7,9 +7,10 @@ import (
 	"io"
 	"net/http"
 	"net/url"
-	"polysdk/internal/hash"
-	"polysdk/internal/polysign"
-	"polysdk/internal/signature"
+
+	"github.com/quanxiang-cloud/go-polysdk/internal/hash"
+	"github.com/quanxiang-cloud/go-polysdk/internal/polysign"
+	"github.com/quanxiang-cloud/go-polysdk/internal/signature"
 )
 
 // header define

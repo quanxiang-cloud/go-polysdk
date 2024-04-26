@@ -1,9 +1,10 @@
 package polysdk
 
 import (
-	"polysdk/internal/polysign"
 	"testing"
 	"time"
+
+	"github.com/quanxiang-cloud/go-polysdk/internal/polysign"
 )
 
 func TestSignature(t *testing.T) {

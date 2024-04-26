@@ -6,12 +6,13 @@ import (
 	"io"
 	"os"
 	"path/filepath"
-	"polysdk/consts"
-	"polysdk/internal/crypto/aesx"
-	"polysdk/internal/crypto/deviceid"
-	"polysdk/internal/hash"
 	"strings"
 	"time"
+
+	"github.com/quanxiang-cloud/go-polysdk/consts"
+	"github.com/quanxiang-cloud/go-polysdk/internal/crypto/aesx"
+	"github.com/quanxiang-cloud/go-polysdk/internal/crypto/deviceid"
+	"github.com/quanxiang-cloud/go-polysdk/internal/hash"
 
 	yaml "gopkg.in/yaml.v2"
 )
@@ -37,7 +38,6 @@ func LoadFromFile(filePath string, validate bool) (*PolyConfig, error) {
 		}
 	}
 	return p, nil
-
 }
 
 // PolyKeyConfig is the config of poly apikey

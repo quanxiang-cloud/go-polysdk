@@ -6,8 +6,9 @@ import (
 	"errors"
 	"fmt"
 	"net/url"
-	"polysdk/internal/polysign"
 	"sort"
+
+	"github.com/quanxiang-cloud/go-polysdk/internal/polysign"
 )
 
 // ToQuery convert any date to http GET query parameter with ordered.
@@ -46,7 +47,7 @@ func buildQuery(name string, d interface{}, buf *bytes.Buffer, depth int) error 
 			// NOTE: dont treat raiseField as a child, raise up it's children to parent
 			const raiseField = polysign.XPolyRaiseUpFieldName
 			if raise, ok := v[raiseField]; ok {
-				delete(v, raiseField) //remove from parent
+				delete(v, raiseField) // remove from parent
 				if mp, ok := raise.(map[string]interface{}); ok {
 					for k, c := range mp {
 						// TODO: handle duplication?

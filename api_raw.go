@@ -1,7 +1,7 @@
 package polysdk
 
 import (
-	"polysdk/internal/apipath"
+	"github.com/quanxiang-cloud/go-polysdk/internal/apipath"
 )
 
 // doc type
@@ -31,7 +31,7 @@ type apiDocReq struct {
 func (c *PolyClient) RawAPIDoc(fullNamespace string, docType string, titleFirst bool) (*HTTPResponse, error) {
 	d := apiDocReq{
 		BodyBase: BodyBase{
-			//Signature: c.bodySign.genBodySignature(),
+			// Signature: c.bodySign.genBodySignature(),
 		},
 		DocType:    docType,
 		TitleFirst: titleFirst,

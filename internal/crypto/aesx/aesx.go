@@ -6,9 +6,10 @@ import (
 	"crypto/rand"
 	"encoding/base64"
 	"errors"
-	"polysdk/consts"
-	"polysdk/internal/hash"
 	"time"
+
+	"github.com/quanxiang-cloud/go-polysdk/consts"
+	"github.com/quanxiang-cloud/go-polysdk/internal/hash"
 )
 
 var (
@@ -22,7 +23,7 @@ const (
 	ivSize            = aes.BlockSize
 	appendSize        = 1
 	version      byte = 1
-	cryptoRounds      = 30_000_000 * consts.HashTimeEstimateMS / int(time.Second/time.Millisecond) //2^25
+	cryptoRounds      = 30_000_000 * consts.HashTimeEstimateMS / int(time.Second/time.Millisecond) // 2^25
 )
 
 // EncodeString encode a string with strong aes crypto.
