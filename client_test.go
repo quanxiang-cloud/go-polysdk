@@ -6,7 +6,7 @@ import (
 
 	"github.com/quanxiang-cloud/go-polysdk"
 
-	"github.com/quanxiang-cloud/go-polysdk/internal/config"
+	"github.com/quanxiang-cloud/go-polysdk/config"
 	"github.com/quanxiang-cloud/go-polysdk/internal/polysign"
 )
 

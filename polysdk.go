@@ -7,7 +7,7 @@ import (
 
 	"github.com/quanxiang-cloud/go-polysdk/internal/signature"
 
-	"github.com/quanxiang-cloud/go-polysdk/internal/config"
+	"github.com/quanxiang-cloud/go-polysdk/config"
 )
 
 const (

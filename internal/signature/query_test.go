@@ -3,13 +3,14 @@ package signature
 import (
 	"encoding/json"
 	"fmt"
-	"github.com/quanxiang-cloud/go-polysdk/internal/config"
-	"github.com/quanxiang-cloud/go-polysdk/internal/polysign"
 	"testing"
+
+	"github.com/quanxiang-cloud/go-polysdk/config"
+	"github.com/quanxiang-cloud/go-polysdk/internal/polysign"
 )
 
 func TestBodyToQuery(t *testing.T) {
-	var v = map[string]interface{}{
+	v := map[string]interface{}{
 		"a": "foo",
 		"b": []string{"foo", "bar"},
 		"c": 123,
@@ -30,7 +31,7 @@ func TestBodyToQuery(t *testing.T) {
 	q, _ := ToQuery(v)
 	fmt.Println(q)
 	fmt.Println(dismantling("", v))
-	var st = struct {
+	st := struct {
 		X  string   `json:"x"`
 		Y  []string `json:"y"`
 		Y2 []int    `json:"y2"`
@@ -88,7 +89,7 @@ func TestSignature(t *testing.T) {
 }
 
 func TestToQuery(t *testing.T) {
-	var testCase = map[string]interface{}{
+	testCase := map[string]interface{}{
 		"a": "f",
 		"b": []string{"foo", "bar"},
 		"c": map[string]interface{}{
