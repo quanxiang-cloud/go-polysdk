@@ -57,6 +57,7 @@ type PolyConfig struct {
 	Key         PolyKeyConfig `json:"key"`
 	CreateAt    string        `json:"createAt"`
 	Description string        `json:"description"`
+	TimeOut     int           `json:"timeout"`
 
 	enc encoding
 }
